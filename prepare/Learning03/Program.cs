@@ -4,42 +4,20 @@ class Program
 {
     static void Main(string[] args)
     {
-        // Console.WriteLine("Welcome to the Journal Program!");
-        // Console.WriteLine("Please select one of the following numbers: ");
-        // Console.WriteLine("1. Write");
-        // Console.WriteLine("2. Display");
-        // Console.WriteLine("3. Load");
-        // Console.WriteLine("4. Save");
-        // Console.WriteLine("5. Quit");
-        // Console.Write("What would you like to do? ");
-        // string _switch = Console.ReadLine();
+       Fraction f1 = new Fraction();
+       Console.WriteLine(f1.GetFractionString());
+       Console.WriteLine(f1.GetDecimalValue());
 
-        // Journal journal = new Journal();
+       Fraction f2 = new Fraction(5);
+       Console.WriteLine(f2.GetFractionString());
+       Console.WriteLine(f2.GetDecimalValue());
 
-        // switch (_switch)
-        // {
-        //     case "1":
-        //         Entry newEntry = new Entry();
-        //         newEntry.NewEntry();
-        //         break;
-        //     case "2":
-        //         journal.DisplayEntries();
-        //         break;
-        //     case "3":
-        //         // Load from
-        //         break;
-        //     case "4":
-        //         // Save to
-        //         break;
-        //     case "5":
-        //         // Do one
-        //         break;
-        //     default:
-        //         Console.WriteLine("Press 5 to Quit or choose from list");
-        //         break;
-            
-        // }
+       Fraction f3 = new Fraction(3, 4);
+       Console.WriteLine(f3.GetFractionString());
+       Console.WriteLine(f3.GetDecimalValue());
 
-
+       Fraction f4 = new Fraction(1, 3);
+       Console.WriteLine(f4.GetFractionString());
+       Console.WriteLine(f4.GetDecimalValue());
     }
 }
